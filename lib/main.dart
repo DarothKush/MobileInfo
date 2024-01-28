@@ -3,15 +3,22 @@ import 'package:flutter/material.dart';
 //page import
 import 'about_page.dart';
 import 'paragon_students_page.dart';
-import 'majors_page.dart';
 import 'faculties_page.dart';
 import 'admissions_page.dart';
 import 'partnerships_page.dart';
 import 'admissions/tuition_page.dart';
 import 'admissions/scholarship_page.dart';
-import 'admissions/admission2/international_page.dart';
-import 'admissions/admission2/postgraduate_page.dart';
-import 'admissions/admission2/undergraduate_page.dart';
+import 'major/international_page.dart';
+import 'major/postgraduate_page.dart';
+import 'major/undergraduate_page.dart';
+
+import 'paragonStudent/alumni_page.dart';
+import 'paragonStudent/library_page.dart';
+import 'paragonStudent/officeOfStudentService_page.dart';
+import 'paragonStudent/studentCouncil_page.dart';
+import 'paragonStudent/studentAmbassador_page.dart';
+import 'paragonStudent/studentClub_page.dart';
+
 import 'package:expandable_menu/expandable_menu.dart';
 
 void main() {
@@ -38,7 +45,6 @@ class MyApp extends StatelessWidget {
       routes: {
         '/about': (context) => const AboutPage(),
         '/students': (context) => const ParagonStudentsPage(),
-        '/majors': (context) => const MajorsPage(),
         '/faculties': (context) => const FacultiesPage(),
         '/admissions': (context) => const AdmissionsPage(),
         '/partnerships': (context) => const PartnershipsPage(),
@@ -47,6 +53,13 @@ class MyApp extends StatelessWidget {
         '/internationals': (context) => const InternationalPage(),
         '/postgraduates': (context) => const PostgraduatePage(),
         '/undergraduates': (context) => const UndergraduatePage(),
+        //paragon_student
+        '/studentClubs': (context) => const StudentclubPage(),
+        '/studentAmbassadors': (context) => const StudentAmbassadorPage(),
+        '/studentCouncils': (context) => const StudentCouncilPage(),
+        '/officeOfStudentServices': (context) => const OfficeOfStudentServicePage(),
+        '/alumnis': (context) => const AlumniPage(),
+        '/libraries': (context) => const LibraryPage(),
       },
     );
   }
@@ -295,26 +308,83 @@ class NavigationDrawer extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
+          ExpansionTile(
             leading: const Icon(Icons.home),
             title: const Text('About'),
-            onTap: () {
-              Navigator.popAndPushNamed(context, '/about');
-            },
+            childrenPadding: EdgeInsets.only(left:40),
+            children: [
+              ListTile(
+                title: Text(''),
+              )
+            ]
           ),
-          ListTile(
-            leading: const Icon(Icons.school),
-            title: const Text('Paragon Students'),
-            onTap: () {
-              Navigator.popAndPushNamed(context, '/students');
-            },
+          ExpansionTile(
+              leading: const Icon(Icons.school),
+              title: const Text('Paragon Student'),
+              childrenPadding: EdgeInsets.only(left:40),
+              children: [
+                ListTile(
+                  title: Text('Student Club'),
+                  onTap: () {
+                    Navigator.popAndPushNamed(context, '/studentClubs');
+                  },
+                ),
+                ListTile(
+                  title: Text('Student Ambassador'),
+                  onTap: () {
+                    Navigator.popAndPushNamed(context, '/studentAmbassadors');
+                  },
+                ),
+                ListTile(
+                  title: Text('Student Council'),
+                  onTap: () {
+                    Navigator.popAndPushNamed(context, '/studentCouncils');
+                  },
+                ),
+                ListTile(
+                  title: Text('Office Of Student Service'),
+                  onTap: () {
+                    Navigator.popAndPushNamed(context, '/officeOfStudentServices');
+                  },
+                ),
+                ListTile(
+                  title: Text('Alumni'),
+                  onTap: () {
+                    Navigator.popAndPushNamed(context, '/alumnis');
+                  },
+                ),
+                ListTile(
+                  title: Text('Library'),
+                  onTap: () {
+                    Navigator.popAndPushNamed(context, '/libraries');
+                  },
+                ),
+              ]
           ),
-          ListTile(
+          ExpansionTile(
             leading: const Icon(Icons.book),
             title: const Text('Majors'),
-            onTap: () {
-              Navigator.popAndPushNamed(context, '/majors');
-            },
+            childrenPadding: EdgeInsets.only(left:40),
+            children: [
+              ListTile(
+                title: Text('Undergraduate'),
+                onTap: () {
+                  Navigator.popAndPushNamed(context, '/undergraduates');
+                }
+              ),
+              ListTile(
+                title: Text('Postgraduate'),
+                  onTap: () {
+                    Navigator.popAndPushNamed(context, '/postgraduates');
+                  }
+              ),
+              ListTile(
+                title: Text('International'),
+                  onTap: () {
+                    Navigator.popAndPushNamed(context, '/internationals');
+                  }
+              )
+            ]
           ),
           ListTile(
             leading: const Icon(Icons.account_balance),
@@ -328,30 +398,6 @@ class NavigationDrawer extends StatelessWidget {
             leading: const Icon(Icons.how_to_reg),
             childrenPadding: EdgeInsets.only(left:40),
             children: [
-              ExpansionTile(
-                title: Text("Admission Requirements"),
-                childrenPadding: EdgeInsets.only(left:40),
-                children: [
-                  ListTile(
-                    title: Text("Undergraduate"),
-                    onTap: () {
-                    Navigator.popAndPushNamed(context, '/undergraduates');
-                    },
-                  ),
-                  ListTile(
-                      title: Text("Postgraduate"),
-                      onTap: () {
-                        Navigator.popAndPushNamed(context, '/postgraduates');
-                      },
-                  ),
-                  ListTile(
-                      title: Text("International"),
-                      onTap: () {
-                        Navigator.popAndPushNamed(context, '/internationals');
-                      },
-                  ),
-                ],
-              ),
               ListTile(
                 title: Text("Tuition Fees"),
                 onTap: () {
