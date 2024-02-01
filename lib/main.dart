@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:infomobile/faculties/facultyOfEngineering_page.dart';
 
 //page import
 import 'about_page.dart';
@@ -18,6 +19,10 @@ import 'paragonStudent/officeOfStudentService_page.dart';
 import 'paragonStudent/studentCouncil_page.dart';
 import 'paragonStudent/studentAmbassador_page.dart';
 import 'paragonStudent/studentClub_page.dart';
+
+import 'faculties/facultyOfEngineering_page.dart';
+import 'faculties/facultyOfComputerScience_page.dart';
+import 'faculties/facultyOfEconomic_page.dart';
 
 import 'package:expandable_menu/expandable_menu.dart';
 
@@ -60,6 +65,10 @@ class MyApp extends StatelessWidget {
         '/officeOfStudentServices': (context) => const OfficeOfStudentServicePage(),
         '/alumnis': (context) => const AlumniPage(),
         '/libraries': (context) => const LibraryPage(),
+
+        '/facultyOfEngineering': (context) => const FacultyOfEngineeringPage(),
+        '/facultyOfComputerScience': (context) => const FacultyOfComputerSciencePage(),
+        '/facultyOfEconomic': (context) => const FacultyOfEconomicPage(),
       },
     );
   }
@@ -386,12 +395,30 @@ class NavigationDrawer extends StatelessWidget {
               )
             ]
           ),
-          ListTile(
+          ExpansionTile(
+            title: Text("Faculties"),
             leading: const Icon(Icons.account_balance),
-            title: const Text('Faculties'),
-            onTap: () {
-              Navigator.popAndPushNamed(context, '/faculties');
-            },
+            childrenPadding: EdgeInsets.only(left:40),
+            children: [
+              ListTile(
+                title: const Text('Faculty Of Engineering'),
+                onTap: () {
+                  Navigator.popAndPushNamed(context, '/facultyOfEngineering');
+                },
+              ),
+              ListTile(
+                title: const Text('Faculty Of Computer Science'),
+                onTap: () {
+                  Navigator.popAndPushNamed(context, '/facultyOfComputerScience');
+                },
+              ),
+              ListTile(
+                title: const Text('Faculty Of Economic'),
+                onTap: () {
+                  Navigator.popAndPushNamed(context, '/facultyOfEconomic');
+                },
+              ),
+            ],
           ),
           ExpansionTile(
             title: Text("Admissions"),
