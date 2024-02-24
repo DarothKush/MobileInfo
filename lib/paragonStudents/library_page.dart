@@ -25,7 +25,7 @@ class _LibraryState extends State<Library> {
                   icon: const Icon(Icons.arrow_back),
                   color: Colors.white,
                   onPressed: () {
-                    Navigator.pushReplacementNamed(context, '/main');
+                    Navigator.popUntil(context, ModalRoute.withName('/'));
                   },
                 ),
                 flexibleSpace: FlexibleSpaceBar(
