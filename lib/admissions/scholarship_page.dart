@@ -35,7 +35,7 @@ class _ScholarshipMainPageState extends State<ScholarshipPage> {
               icon: const Icon(Icons.arrow_back),
               color: Colors.white,
               onPressed: () {
-                Navigator.pushReplacementNamed(context, '/demoMain');
+                Navigator.popUntil(context, ModalRoute.withName('/'));
               },
             ),
             flexibleSpace: FlexibleSpaceBar(

@@ -3,6 +3,11 @@ import 'package:flutter/material.dart';
 import 'admissions/tuition_page.dart';
 import 'admissions/scholarship_page.dart';
 import 'admissions/admissions_page.dart';
+import 'admissions/ParagonUScholarship.dart';
+import 'admissions/NationalOlympiadScholarship.dart';
+import 'admissions/PartnershipScholarship.dart';
+import 'admissions/scholarship_page.dart';
+import 'admissions/nationalExamScholarship.dart';
 
 import 'prospectiveStudents/international_page.dart';
 import 'prospectiveStudents/postgraduate_page.dart';
@@ -14,6 +19,7 @@ import 'paragonStudents/studentServices_page.dart';
 import 'paragonStudents/studentCouncil_page.dart';
 import 'paragonStudents/studentAmbassador_page.dart';
 import 'paragonStudents/studentClub_page.dart';
+
 
 import 'about/faq_page.dart';
 import 'about/calender_page.dart';
@@ -65,6 +71,12 @@ class MyApp extends StatelessWidget {
         '/officeOfStudentServices': (context) => const StudentServices(),
         '/libraries': (context) => const Library(),
         '/alumni': (context) => const AlumniPage(),
+
+        '/ParagonUScholarship': (context) => const ParagonUScholarship(),
+        '/NationalExamScholarship': (context) => const NationalExam(),
+        '/NationalOlympiadScholarship': (context) => const NationalOlympiad(),
+        '/ScholarshipMainPage': (context) => const ScholarshipPage(),
+        '/PartnershipScholarship': (context) => const Partnership(),
 
         '/industrialPartners': (context) => IndustrialPartnersPage(),
         '/universityPartners': (context) => UniversityPartnersPage(),
