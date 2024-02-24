@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ApiController;
+use App\Http\Controllers\DescriptionController;
+use App\Http\Controllers\TextController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::get('apis/{api}', [ApiController::class, 'show']);
+
+Route::get('texts/{text}', [TextController::class, 'show']);
+
+Route::get('descriptions/{description}', [DescriptionController::class, 'show']);
