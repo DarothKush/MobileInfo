@@ -8,7 +8,7 @@ class Chart extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "History",
+          "Organizational Chart",
           style: TextStyle(color: Colors.white),
           ),
         leading: IconButton(
@@ -32,9 +32,9 @@ class Chart extends StatelessWidget {
                 padding: const EdgeInsets.all(12.0),
                 child: Image.asset(
                   'assets/images/organizational-chart-piu.jpg', // Replace with your image URL
-                  width: 200.0, // Adjust the width as needed
-                  height: 200.0, // Adjust the height as needed
-                  fit: BoxFit.cover, // Adjust the BoxFit property as needed
+                  width: 400.0, // Adjust the width as needed
+                  height: 400.0, // Adjust the height as needed
+                  fit: BoxFit.fill, // Adjust the BoxFit property as needed
                 ),
               ),
             ],

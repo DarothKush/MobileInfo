@@ -17,7 +17,7 @@ class _CalenderState extends State<Calender> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "History",
+          "Calender",
           style: TextStyle(color: Colors.white),
         ),
         leading: IconButton(
@@ -30,12 +30,15 @@ class _CalenderState extends State<Calender> {
         backgroundColor: const Color.fromARGB(255, 18, 53, 180),
       ),
       body: SingleChildScrollView(
-        child: Center(
-          child: TableCalendar(
-            focusedDay: today,
-            firstDay: DateTime.utc(2010, 10 ,16),
-            lastDay: DateTime.utc(2030, 10 ,16),
-          )
+        child: Padding(
+          padding: const EdgeInsets.all(20.0), // Adjust the padding as needed
+            child: Center(
+              child: TableCalendar(
+                focusedDay: today,
+                firstDay: DateTime.utc(2010, 10, 16),
+                lastDay: DateTime.utc(2030, 10, 16),
+              ),
+            ),
           ),
         ),
     );
