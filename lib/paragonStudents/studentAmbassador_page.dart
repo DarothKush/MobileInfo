@@ -8,20 +8,6 @@ class StudentAmbassador extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Image.asset("assets/images/paragon-logo-2@2x.png", width: 140, height: 45),
-        actions: [
-          IconButton(
-              onPressed: (){
-                // do something
-              },
-              icon: const Icon(Icons.search)
-          ),
-          IconButton(
-              onPressed: (){
-                // do something
-              },
-              icon: const Icon(Icons.menu)
-          )
-        ],
         backgroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
@@ -157,7 +143,7 @@ class StudentAmbassador extends StatelessWidget {
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
               child: const Image(
-                  image: AssetImage('assets/images/angkorwat.jpg')
+                  image: AssetImage('assets/images/amb1.png')
               ),
             ),
 
@@ -201,7 +187,7 @@ class StudentAmbassador extends StatelessWidget {
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
               child: const Image(
-                  image: AssetImage('assets/images/angkorwat.jpg')
+                  image: AssetImage('assets/images/amb2.png')
               ),
             ),
 
@@ -245,7 +231,7 @@ class StudentAmbassador extends StatelessWidget {
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
               child: const Image(
-                  image: AssetImage('assets/images/angkorwat.jpg')
+                  image: AssetImage('assets/images/amb3.png')
               ),
             ),
 
@@ -301,7 +287,7 @@ class StudentAmbassador extends StatelessWidget {
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
               child: const Image(
-                  image: AssetImage('assets/images/angkorwat.jpg')
+                  image: AssetImage('assets/images/amb4.png')
               ),
             ),
 
@@ -335,7 +321,7 @@ class StudentAmbassador extends StatelessWidget {
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
               child: const Image(
-                  image: AssetImage('assets/images/angkorwat.jpg')
+                  image: AssetImage('assets/images/amb5.png')
               ),
             ),
 
@@ -368,7 +354,7 @@ class StudentAmbassador extends StatelessWidget {
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
               child: const Image(
-                  image: AssetImage('assets/images/angkorwat.jpg')
+                  image: AssetImage('assets/images/amb6.png')
               ),
             ),
 
@@ -395,8 +381,36 @@ class StudentAmbassador extends StatelessWidget {
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.black)
               ),
             ),
+            FooterSection(),
           ],
+
         ),
+      ),
+    );
+  }
+}
+
+class FooterSection extends StatelessWidget {
+  const FooterSection({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final ThemeData theme = Theme.of(context);
+
+    return Container(
+      padding: const EdgeInsets.all(16.0),
+      color: Colors.black,
+      child: const Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+          ),
+          Text(
+            'Copyright © 2024 All Rights Reserved. Paragon International University',
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.white, fontSize: 14),
+          ),
+        ],
       ),
     );
   }

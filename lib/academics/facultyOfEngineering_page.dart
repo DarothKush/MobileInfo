@@ -10,7 +10,6 @@ class FacultyOfEngineeringPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Placeholder for Faculty of Engineering banner image
             Container(
               height: 200,
               color: Colors.grey, // Placeholder color for the banner image

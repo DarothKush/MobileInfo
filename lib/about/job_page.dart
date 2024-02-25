@@ -12,7 +12,7 @@ class Job extends StatefulWidget {
 class _JobState extends State<Job> {
   RegExp get _emailRegex => RegExp(r'^[^@\s]+@[^@\s\.]+\.[^@\.\s]+$');
   final _formKey = GlobalKey<FormState>();
-  String? selectedOption; // Make selectedOption nullable
+  String? selectedOption;
 
   @override
   Widget build(BuildContext context) {
@@ -465,7 +465,7 @@ class _JobState extends State<Job> {
                             ),
                           ),             
                         const SizedBox(height: 20,),
-                        Text('Role: $selectedOption'),
+                        // Text('Role: $selectedOption'),
                         const SizedBox(width: 10.0), // Add space between text and DropdownButton
                         DropdownButton<String>(
                           value: selectedOption,

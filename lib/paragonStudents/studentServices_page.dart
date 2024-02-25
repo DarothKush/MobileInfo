@@ -8,20 +8,6 @@ class StudentServices extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Image.asset("assets/images/paragon-logo-2@2x.png", width: 140, height: 45),
-        actions: [
-          IconButton(
-              onPressed: (){
-                // do something
-              },
-              icon: const Icon(Icons.search)
-          ),
-          IconButton(
-              onPressed: (){
-                // do something
-              },
-              icon: const Icon(Icons.menu)
-          )
-        ],
         backgroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
@@ -30,7 +16,7 @@ class StudentServices extends StatelessWidget {
             Container(
               decoration: const BoxDecoration(
                   image: DecorationImage(image: AssetImage("assets/images/meeting.jpg"))),
-              width: 400,
+              width: 600,
               height: 270,
               padding: const EdgeInsets.all(20.0),
               alignment: Alignment.centerLeft,
@@ -41,7 +27,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              width: 400,
+              width: 600,
               height: 110,
               padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 5.0),
               alignment: Alignment.topCenter,
@@ -52,7 +38,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              width: 500,
+              width: 600,
               height: 450,
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -72,7 +58,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              width: 400,
+              width: 600,
               height: 80,
               padding: const EdgeInsets.fromLTRB(30.0, 5.0, 30.0, 5.0),
               alignment: Alignment.topCenter,
@@ -83,7 +69,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              width: 500,
+              width: 600,
               height: 170,
               alignment: Alignment.topLeft,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -98,19 +84,19 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 350,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               alignment: Alignment.topCenter,
               child: const CircleAvatar(
                 radius: 160,
-                backgroundImage: AssetImage('assets/images/placeholder.jpg'),
+                backgroundImage: AssetImage('assets/images/Meirambek.jpg'),
               ),
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -122,7 +108,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
@@ -134,19 +120,19 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 350,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               alignment: Alignment.topCenter,
               child: const CircleAvatar(
                 radius: 160,
-                backgroundImage: AssetImage('assets/images/placeholder.jpg'),
+                backgroundImage: AssetImage('assets/images/Sheue.jpg'),
               ),
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -158,7 +144,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
@@ -170,19 +156,19 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 350,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               alignment: Alignment.topCenter,
               child: const CircleAvatar(
                 radius: 160,
-                backgroundImage: AssetImage('assets/images/placeholder.jpg'),
+                backgroundImage: AssetImage('assets/images/Sokna.jpg'),
               ),
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -194,7 +180,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
@@ -206,19 +192,19 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 350,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               alignment: Alignment.topCenter,
               child: const CircleAvatar(
                 radius: 160,
-                backgroundImage: AssetImage('assets/images/placeholder.jpg'),
+                backgroundImage: AssetImage('assets/images/Kanha.png'),
               ),
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -230,7 +216,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
@@ -242,19 +228,19 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 350,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               alignment: Alignment.topCenter,
               child: const CircleAvatar(
                 radius: 160,
-                backgroundImage: AssetImage('assets/images/placeholder.jpg'),
+                backgroundImage: AssetImage('assets/images/Saovattana.png'),
               ),
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -266,7 +252,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
@@ -278,19 +264,19 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 350,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               alignment: Alignment.topCenter,
               child: const CircleAvatar(
                 radius: 160,
-                backgroundImage: AssetImage('assets/images/placeholder.jpg'),
+                backgroundImage: AssetImage('assets/images/Sidavid.png'),
               ),
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -302,7 +288,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
@@ -314,19 +300,19 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 350,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               alignment: Alignment.topCenter,
               child: const CircleAvatar(
                 radius: 160,
-                backgroundImage: AssetImage('assets/images/placeholder.jpg'),
+                backgroundImage: AssetImage('assets/images/Vannvibol.png'),
               ),
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -338,7 +324,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 370,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
@@ -493,7 +479,7 @@ class StudentServices extends StatelessWidget {
               alignment: Alignment.topCenter,
             ),
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 340,
               height: 80,
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
@@ -505,7 +491,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 340,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 1),
@@ -517,7 +503,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 340,
               height: 80,
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 5),
@@ -529,7 +515,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 340,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 5),
@@ -541,7 +527,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 340,
               height: 30,
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 5),
@@ -553,7 +539,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 340,
               height: 80,
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
@@ -565,7 +551,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 340,
               height: 40,
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 1),
@@ -577,7 +563,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 340,
               height: 80,
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
@@ -589,7 +575,7 @@ class StudentServices extends StatelessWidget {
             ),
 
             Container(
-              color: Colors.indigo,
+              color: const Color(0xFF192f59),
               width: 340,
               height: 80,
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
@@ -610,19 +596,20 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 400,
+              width: 600,
               height: 200,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
               alignment: Alignment.topLeft,
               child: const CircleAvatar(
                 radius: 60,
-                backgroundImage: AssetImage('assets/images/placeholder.jpg'),
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage('assets/images/ASU.png'),
               ),
             ),
 
             Container(
               color: Colors.grey,
-              width: 400,
+              width: 600,
               height: 50,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
               alignment: Alignment.topLeft,
@@ -634,7 +621,7 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 500,
+              width: 600,
               height: 220,
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -649,7 +636,7 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 500,
+              width: 600,
               height: 140,
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -662,7 +649,7 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 400,
+              width: 600,
               height: 80,
               padding: const EdgeInsets.fromLTRB(30.0, 5.0, 30.0, 5.0),
               alignment: Alignment.topCenter,
@@ -674,7 +661,7 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 500,
+              width: 600,
               height: 170,
               alignment: Alignment.topLeft,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -688,19 +675,90 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 400,
+              width: 600,
               height: 200,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
               alignment: Alignment.topLeft,
               child: const CircleAvatar(
                 radius: 60,
-                backgroundImage: AssetImage('assets/images/placeholder.jpg'),
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage('assets/images/CC.png'),
               ),
             ),
 
             Container(
               color: Colors.grey,
-              width: 400,
+              width: 600,
+              height: 50,
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
+              alignment: Alignment.topLeft,
+              child: const Text(
+                  "Career Center",
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.black)
+              ),
+            ),
+
+            Container(
+              color: Colors.grey,
+              width: 600,
+              height: 340,
+              alignment: Alignment.topCenter,
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
+              child: const Text(
+                "The Career Center (CC) strives to provide the highest quality of comprehensive career services to all matriculated undergraduate students and alumni of Paragon International University."
+                    " The Career Center functions as a vital component in the total educational experience of students, primarily in the development "
+                    "and implementation of career and educational plans. Career Services fosters partnerships with employers, alumni, faculty, staff, administrators,"
+                    " and the greater community to increase participation in providing opportunities for the career development of students.",
+                style: TextStyle(fontSize: 16, color: Colors.black),
+              ),
+            ),
+
+            Container(
+              color: Colors.grey,
+              width: 600,
+              height: 80,
+              padding: const EdgeInsets.fromLTRB(30.0, 5.0, 30.0, 5.0),
+              alignment: Alignment.topCenter,
+              child: const Text(
+                  "Essential Functions in the Career Center:",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black)
+              ),
+            ),
+
+            Container(
+              color: Colors.grey,
+              width: 600,
+              height: 220,
+              alignment: Alignment.topLeft,
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
+              child: const Text(
+                  "- Planning and counselling"
+                      "\n- Career fairs and events"
+                      "\n- Jobs and internships"
+                      "\n- Interview and reparation"
+                      "\n- Resume resources"
+                      "\n- Career workshops",
+                  style: TextStyle(fontSize: 16, color: Colors.black, height: 2)
+              ),
+            ),
+
+
+            Container(
+              color: Colors.grey,
+              width: 600,
+              height: 200,
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
+              alignment: Alignment.topLeft,
+              child: const CircleAvatar(
+                radius: 60,
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage('assets/images/sc.png'),
+              ),
+            ),
+
+            Container(
+              color: Colors.grey,
+              width: 600,
               height: 50,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
               alignment: Alignment.topLeft,
@@ -712,7 +770,7 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 500,
+              width: 600,
               height: 220,
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -727,7 +785,7 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 400,
+              width: 600,
               height: 80,
               padding: const EdgeInsets.fromLTRB(30.0, 5.0, 30.0, 5.0),
               alignment: Alignment.topCenter,
@@ -739,7 +797,7 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 500,
+              width: 600,
               height: 170,
               alignment: Alignment.topLeft,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -755,19 +813,20 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 400,
+              width: 600,
               height: 200,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
               alignment: Alignment.topLeft,
               child: const CircleAvatar(
                 radius: 60,
-                backgroundImage: AssetImage('assets/images/placeholder.jpg'),
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage('assets/images/SCCA.png'),
               ),
             ),
 
             Container(
               color: Colors.grey,
-              width: 400,
+              width: 600,
               height: 80,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 1),
               alignment: Alignment.topLeft,
@@ -779,7 +838,7 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 500,
+              width: 600,
               height: 260,
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -794,7 +853,7 @@ class StudentServices extends StatelessWidget {
 
             Container(
               color: Colors.grey,
-              width: 500,
+              width: 600,
               height: 150,
               alignment: Alignment.topCenter,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
@@ -804,8 +863,35 @@ class StudentServices extends StatelessWidget {
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
             ),
+            FooterSection(),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class FooterSection extends StatelessWidget {
+  const FooterSection({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final ThemeData theme = Theme.of(context);
+
+    return Container(
+      padding: const EdgeInsets.all(16.0),
+      color: Colors.black,
+      child: const Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+          ),
+          Text(
+            'Copyright © 2024 All Rights Reserved. Paragon International University',
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.white, fontSize: 14),
+          ),
+        ],
       ),
     );
   }
