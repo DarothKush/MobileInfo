@@ -6,6 +6,14 @@ class FacultyOfEconomicPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        // This adds a back button in AppBar.
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Text('Faculty of Economics and Administrative Sciences'),
+      ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,7 +65,7 @@ class FacultyOfEconomicPage extends StatelessWidget {
                   SizedBox(height: 16),
                   // Placeholder Widgets for Academic Staff
                   Placeholder(fallbackHeight: 200),
-                  SizedBox(height: 32),
+                  // Additional content as needed
                 ],
               ),
             ),

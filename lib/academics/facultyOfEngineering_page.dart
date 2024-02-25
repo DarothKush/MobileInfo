@@ -6,10 +6,19 @@ class FacultyOfEngineeringPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        // This adds a back button in AppBar.
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Text('Faculty of Engineering'),
+      ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Placeholder for Faculty of Engineering banner image
             Container(
               height: 200,
               color: Colors.grey, // Placeholder color for the banner image
@@ -54,7 +63,6 @@ class FacultyOfEngineeringPage extends StatelessWidget {
                   // Academic Staff Placeholder Widgets
                   // Replace with actual widgets or images
                   Placeholder(fallbackHeight: 200),
-                  SizedBox(height: 32),
                   // Actions
                 ],
               ),
